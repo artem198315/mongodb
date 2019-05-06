@@ -1,0 +1,7 @@
+---
+- name: Show info about the env this host belongs to
+  debug:
+    msg: "This host belongs to {{ env }} environment!!!"
+
+- include: install_mongo.yml
+- include: config_mongo.yml
